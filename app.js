@@ -14,6 +14,20 @@ app.post('/api/addToDo', function(req, res) {
     console.log(req.body);
 });
 
+app.get('/api/gettodolist', function(req, res){
+
+	var todolist = [
+		{ task: "Make dinner" },
+		{ task: "Walk the dog" }, 
+		{ task: "Do Homework" }, 
+		{ task: "Clean Room" }
+	];
+
+  res.setHeader('Content-Type', 'application/json');
+  res.json(todolist);
+
+})
+
 app.use(express.static(__dirname));
 
 app.listen(3000,function(){
