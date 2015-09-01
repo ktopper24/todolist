@@ -1,0 +1,28 @@
+html {
+  background-color: #6699FF;
+  text-align: center;
+
+}
+
+.title h1 {
+  color: #66FF66;
+}
+
+form {
+  color: #FF0066;
+}
+
+#button {
+  background-color: gray;
+  color: #CC66FF;
+  font-weight: bold;
+  height: 20px;
+  width: 80px;
+  text-align: center;
+
+  display: inline-block;
+}
+
+.list {
+  color: white;
+}
