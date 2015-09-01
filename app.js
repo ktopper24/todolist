@@ -14,8 +14,7 @@ app.post('/api/addToDo', function(req, res) {
     console.log(req.body);
 });
 
-app.use(express.static(__dirname + '/styles'));
-app.use(express.static(__dirname + '/scripts'));
+app.use(express.static(__dirname));
 
 app.listen(3000,function(){
   console.log("Started on PORT 3000");
